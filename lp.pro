@@ -1,5 +1,5 @@
-% 1
-sum-up-numbers-simple([], _).
+% 1 N is the sum of numbers not in nested lists in L.
+sum-up-numbers-simple(L, N).
 sum-up-numbers-simple([X|Y], N):-
     N is X + Y.
 member(X, [X|_]).
