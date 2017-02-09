@@ -1,6 +1,7 @@
 % 1
-sum-up-numbers-simple(_, _).
-sum-up-numbers-simple(L, N):-
+sum-up-numbers-simple([], _).
+sum-up-numbers-simple([X|Y], N):-
+    N is X + Y. 
 
 % 2
 sum-up-numbers-general(_, _).
