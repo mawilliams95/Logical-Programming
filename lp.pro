@@ -1,7 +1,9 @@
 % 1
 sum-up-numbers-simple([], _).
 sum-up-numbers-simple([X|Y], N):-
-    N is X + Y. 
+    N is X + Y.
+member(X, [X|_]).
+member(X, [_|Z]):- member(X,Z).
 
 % 2
 sum-up-numbers-general(_, _).
