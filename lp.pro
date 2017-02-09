@@ -16,8 +16,9 @@ member(X, [_|Z]):- member(X,Z).
 
 % 3
 % N is the minimum of the numbers in L1 that are larger than the smallest number in L2.
-min-above-min(_, _, _).
-min-above-min(L1, L2, N):-
+min-above-min(L1, L2, N).
+min-above-min([X|Y], L2, N):-
+    min(X,Y,N).
 
 % 4
 % N is a simple list of the items that appear in both L1 and L2.
