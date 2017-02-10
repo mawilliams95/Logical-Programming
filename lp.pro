@@ -22,5 +22,5 @@ min-above-min([X|Y], L2, N):-
 
 % 4
 % N is a simple list of the items that appear in both L1 and L2.
-common-unique-elements(_, _, _).
-common-unique-elements(L1, L2, N):-
+common-unique-elements(L1, L2, N).
+common-unique-elements([X|Y1], [X|Y2], N):-
